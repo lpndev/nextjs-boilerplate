@@ -3,11 +3,11 @@ const config = {
   bracketSpacing: true,
   endOfLine: 'lf',
   jsxSingleQuote: true,
-  semi: false,
+  plugins: ['prettier-plugin-tailwindcss'],
   printWidth: 80,
+  semi: false,
   singleQuote: true,
   tabWidth: 2,
-  plugins: ['prettier-plugin-tailwindcss'],
 }
 
 export default config
