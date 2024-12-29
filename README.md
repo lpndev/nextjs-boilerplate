@@ -3,8 +3,8 @@
 #### Clone repository and rename
 
 ```shell
-git clone https://github.com/lpndev/template.git
-mv template [project-name]
+git clone https://github.com/lpndev/nextjs-boilerplate.git
+mv nextjs-boilerplate [project-name]
 cd [project-name]
 ```
 
@@ -39,4 +39,4 @@ bun run start
 
 ## License
 
-Licensed under the [MIT](https://github.com/lpndev/template/blob/main/LICENSE) license.
+Licensed under the [MIT](https://github.com/lpndev/nextjs-boilerplate/blob/main/LICENSE) license.
