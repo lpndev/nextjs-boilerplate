@@ -8,6 +8,12 @@ mv nextjs-boilerplate [project-name]
 cd [project-name]
 ```
 
+#### First commit (optional)
+
+```shell
+git add . && git commit -m "initial commit"
+```
+
 #### Initiate project
 
 ```shell
