@@ -19,7 +19,7 @@ git add . && git commit -m "initial commit"
 
 ```shell
 bun install
-bun update
+bun run update
 ```
 
 #### Initiate project
