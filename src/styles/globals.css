@@ -1,21 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+}
 
 @layer base {
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: var(--background) transparent;
-  }
-
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 0, 0%, 96%;
+    --foreground: 0, 0%, 9%;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 0, 0%, 9%;
+    --foreground: 0, 0%, 96%;
+  }
+}
+
+@layer utilities {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--background) transparent;
   }
 }
 
@@ -25,6 +32,6 @@
   }
 
   body {
-    @apply min-h-screen bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
   }
 }

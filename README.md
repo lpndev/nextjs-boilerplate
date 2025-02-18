@@ -5,7 +5,7 @@
 ```shell
 git clone https://github.com/lpndev/nextjs-boilerplate.git
 mv nextjs-boilerplate [project-name]
-cd [project-name]
+code [project-name]
 ```
 
 #### Initialize Git & first commit (optional)
