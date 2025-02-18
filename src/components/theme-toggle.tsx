@@ -14,11 +14,11 @@ export function ThemeToggle({ className }: { className?: string }) {
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
     >
       <Sun
-        className='scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90'
+        className='dark:-rotate-90 scale-100 transition-all dark:scale-0'
         weight='duotone'
       />
       <Moon
-        className='absolute scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0'
+        className='absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100'
         weight='duotone'
       />
     </button>

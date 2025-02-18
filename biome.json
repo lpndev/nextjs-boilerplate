@@ -1,12 +1,8 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "files": {
-    "ignore": [],
-    "ignoreUnknown": false
-  },
   "formatter": {
-    "attributePosition": "auto",
     "enabled": true,
+    "ignore": ["node_modules", ".next"],
     "indentStyle": "space",
     "indentWidth": 2,
     "lineWidth": 80
@@ -26,7 +22,28 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "correctness": {
+        "noUnusedVariables": "warn"
+      },
+      "nursery": {
+        "useSortedClasses": {
+          "fix": "safe",
+          "level": "warn",
+          "options": {
+            "attributes": ["classList"],
+            "functions": ["clsx", "cva", "tw"]
+          }
+        }
+      },
+      "recommended": true,
+      "style": {
+        "noUnusedTemplateLiteral": "off",
+        "noUselessElse": "off",
+        "useImportType": "error"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn"
+      }
     }
   },
   "organizeImports": {
