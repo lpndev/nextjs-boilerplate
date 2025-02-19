@@ -1,8 +1,7 @@
-import SuspendedPostHogPageView from '@/components/posthog/page-view'
 import { fontMono, fontSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
-import { ThemeProvider } from '@/providers/next-themes'
-import { PostHogProvider } from '@/providers/posthog'
+import Providers from '@/providers'
+import type { RootLayoutProps } from '@/types'
 import type { Metadata } from 'next'
 import '@/styles/globals.css'
 
@@ -11,20 +10,11 @@ export const metadata: Metadata = {
   title: 'Home',
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang='en' suppressHydrationWarning>
       <body className={cn(fontSans.variable, fontMono.variable)}>
-        <ThemeProvider attribute='class' defaultTheme='dark'>
-          <PostHogProvider>
-            {children}
-            <SuspendedPostHogPageView />
-          </PostHogProvider>
-        </ThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
