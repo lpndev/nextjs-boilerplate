@@ -11,21 +11,21 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
-    "@tailwindcss/postcss": "^4.0.7",
-    "@tanstack/react-query": "^5.66.7",
+    "@tailwindcss/postcss": "^4.0.8",
+    "@tanstack/react-query": "^5.66.9",
     "clsx": "^2.1.1",
-    "next-themes": "^0.4.4",
     "next": "^15.1.7",
-    "postcss": "^8.5.2",
-    "posthog-js": "^1.219.4",
-    "react-dom": "^19.0.0",
+    "next-themes": "^0.4.4",
+    "postcss": "^8.5.3",
+    "posthog-js": "^1.222.0",
     "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "tailwind-merge": "^3.0.1",
-    "tailwindcss": "^4.0.7"
+    "tailwindcss": "^4.0.8"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/node": "^22.13.4",
+    "@types/node": "^22.13.5",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "typescript": "^5.7.3"
