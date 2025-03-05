@@ -21,6 +21,7 @@
   },
   "linter": {
     "enabled": true,
+    "ignore": ["node_modules", ".next"],
     "rules": {
       "correctness": {
         "noUnusedVariables": "warn"

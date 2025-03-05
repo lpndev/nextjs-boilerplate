@@ -1,18 +1,9 @@
-import SuspendedPostHogPageView from '@/components/posthog/page-view'
-import { ThemeProvider } from '@/providers/next-themes'
-import { PostHogProvider } from '@/providers/posthog'
-import { QueryProvider } from '@/providers/query-provider'
-import type { PropsWithChildren } from 'react'
+import { ThemeProvider } from '@/providers/theme'
 
-export default function Providers({ children }: PropsWithChildren) {
+export default function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <QueryProvider>
-      <ThemeProvider attribute='class' defaultTheme='dark'>
-        <PostHogProvider>
-          {children}
-          <SuspendedPostHogPageView />
-        </PostHogProvider>
-      </ThemeProvider>
-    </QueryProvider>
+    <ThemeProvider attribute='class' defaultTheme='dark'>
+      {children}
+    </ThemeProvider>
   )
 }
